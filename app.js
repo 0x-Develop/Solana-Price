@@ -11,6 +11,13 @@ xhr.onreadystatechange = function() {
     console.log(xhr.status);
     console.log(xhr.responseText);
     document.write(xhr.responseText)
+
+    var jsonParsed = JSON.parse(json);
+
+    var keys = jsonParsed.SearchAndSelect[0].usd;
+
+    console.log(usd);
+
     
  
   }
